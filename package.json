@@ -2,12 +2,8 @@
   "name": "svg-logo-creator",
   "version": "1.0.0",
   "description": "Generates SVG logos",
-  "main": "index.js"
-}
-  "scripts": {
-  "test": "jest"
-  },
-{
+  "main": "index.js",
+
   "author": "MsJamesM",
   "license": "ISC",
   "dependencies": {
