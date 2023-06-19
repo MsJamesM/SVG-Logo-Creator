@@ -28,6 +28,8 @@ inquirer
       message: "Choose a color for the shape",
     },
   ])
+
+  // builds logo based on user input
   .then((logoOutput) => {
     let shapes;
 
@@ -55,7 +57,10 @@ inquirer
       );
     }
 
-    fs.writeFile("./examples/logo.svg", shapes.render(), (err) => {
+    // creates SVG file
+    const newLogo = `./examples/logo_${logoOutput.shapes}.svg`;
+
+    fs.writeFile(newLogo, shapes.render(), (err) => {
       if (err) {
         console.log("❌ ㅤError - please try again ❌");
       } else {
