@@ -64,7 +64,7 @@ inquirer
       if (err) {
         console.log("❌ ㅤError - please try again ❌");
       } else {
-        console.log("✔️ ㅤYour logo has been created ✔️");
+        console.log("✔️ ㅤGenerated logo.svg ✔️");
       }
     });
   });
